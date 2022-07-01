@@ -1,27 +1,17 @@
-# PaymentForm
+## Payment Form - Angular Pipes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.3.
+Small form made in Angular to practice Angular pipes and its concepts.
 
-## Development server
+Height template and property is there for decimal practice purposes
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Topics Covered
 
-## Code scaffolding
+_TitleCasePipe, using Bootstrap in Angular, datePipe, currencyPipe, jsonPipe, creating custom pipes_
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Pipes: use pipes form Angular documentation if needed, in an interpolation property add straight slash and then the name of the pipe.
+2. datePipe: helpful to format dates in Angular.
+3. currencyPipe: helpful to format and customize currencies in Angular, we can put the country ISO to format them to the right currency.
+4. jsonPipe: useful for debugging. Will show on screen the json version of it.
+5. To create custom pipes: in the CLI we type 'ng g pipe nameHere', this will create a pipe in our code and that file we can then use and manipulate to make or own pipe. Once we have the setup we can use the pipe as we use any other. In this case the pipe is _convert_ to convert miles to kilometers. We can add args to our custom pipes as we do in other pipes.
+6. We can reuse pipes in any templates, including directives (like ngIf) however to do so we need to wrap them in parenthesis to make them work as this is the valid syntax.
+7. We can also use more than one pipe in our interpolation.
